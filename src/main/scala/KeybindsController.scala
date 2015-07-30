@@ -1,40 +1,32 @@
-import java.io.InputStream
 import java.util.logging.{Level, Logger}
-
-
-import org.jnativehook.{NativeHookException, GlobalScreen}
-import org.jnativehook.keyboard.{NativeKeyListener, NativeKeyEvent}
-import plugin.QuakePlugin
-
-import scala.io.Source
-import scalafx.embed.swing.SwingFXUtils
-import scalafx.event.ActionEvent
-import scalafx.scene.control.Menu
-import scalafx.scene.{Node, Group}
 import javafx.scene.image.ImageView
-import scalafx.scene.image.Image
-import scalafx.scene.input.MouseEvent
 import javafx.scene.paint.Paint
 import javafx.scene.shape.SVGPath
+
+import org.jnativehook.keyboard.{NativeKeyEvent, NativeKeyListener}
+import org.jnativehook.{GlobalScreen, NativeHookException}
+import plugin.QuakePlugin
+
+import scalafx.scene.Group
+import scalafx.scene.control.Menu
+import scalafx.scene.input.MouseEvent
 import scalafxml.core.macros.sfxml
 
 
 @sfxml
 class KeybindsController(keySVG: Group, keyIMG: Group, weaponIcons: Group, pluginMenu: Menu) extends NativeKeyListener{
 
-  addGlobalKeyListener
+  addGlobalKeyListener()
 
   val keymap = getMapOfKeyLayout
 
   val keyImageMap = getMapOfKeyImages
-
+  val plugin = new QuakePlugin(pluginMenu, keyImageMap)
 
   def getMapOfKeyImages = {
     keyIMG.children.toArray.map(e => (e.asInstanceOf[ImageView].getId, e.asInstanceOf[ImageView]))
     .toMap[String,ImageView]
   }
-
-  val plugin = new QuakePlugin(pluginMenu, keyImageMap)
 
   def getMapOfKeyLayout = {
     keySVG.children.toArray.map(e =>
@@ -42,21 +34,21 @@ class KeybindsController(keySVG: Group, keyIMG: Group, weaponIcons: Group, plugi
       .toMap[String,(SVGPath,Paint)]
   }
 
-  def addGlobalKeyListener = {
+  def addGlobalKeyListener() = {
     try{
       GlobalScreen.registerNativeHook()
     }catch{
       case e: NativeHookException =>
         System.err.println("There was a problem registering the native hook.")
-        System.err.println(e.getMessage())
+        System.err.println(e.getMessage)
 
         System.exit(1)
     }
     GlobalScreen.addNativeKeyListener(this)
-    setGlobalKeyListenerLoggingLevel
+    setGlobalKeyListenerLoggingLevel()
   }
 
-  def setGlobalKeyListenerLoggingLevel = {
+  def setGlobalKeyListenerLoggingLevel() = {
     val handlers = Logger.getLogger("").getHandlers
     for (i <- handlers.indices) {
       handlers(i).setLevel(Level.WARNING)
