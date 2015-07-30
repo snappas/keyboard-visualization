@@ -1,13 +1,9 @@
 
-import java.util.logging.{Logger, LogManager, Level}
-
-import org.jnativehook.{NativeHookException, GlobalScreen}
-
+import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.Scene
-import scalafxml.core.{NoDependencyResolver, FXMLView}
-import scalafx.Includes._
+import scalafxml.core.{FXMLView, NoDependencyResolver}
 
 object driver extends JFXApp {
   stage = new PrimaryStage() {
