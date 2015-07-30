@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.transform.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeybindsController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <Menu fx:id="pluginMenu" mnemonicParsing="false" text="Plugin">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="570.0" style="-fx-background-color: #222222;">
+         <children>
+            <VBox layoutX="4.0" prefHeight="293.0" prefWidth="570.0">
+               <children>
+                  <Pane prefHeight="219.0" prefWidth="570.0">
+                     <children>
+                        		<Group id="layer1" fx:id="keySVG" layoutX="133.0" layoutY="935.0" onMouseClicked="#handleKeyClicked" opacity="1.0" scaleX="2.0" scaleY="2.0">
+                        			<children>
+                        				<SVGPath id="Enter" content="m 236.28346,987.07787 0,17.00003 5,0 0,17.9999 17,0 0,-17.9999 0,-6.00003 0,-11 -22,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="F10" content="m 182.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Down" content="m 241.28348,1041.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="A" content="m 25.283467,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="H" content="m 115.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Left Control" content="m -6.7165354,1041.0787 23.0000004,0 0,17 -23.0000004,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="Right Shift" content="m 214.28346,1023.0787 26,0 0,17 -26,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Period" content="m 178.28346,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F7" content="m 128.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Back Slash" content="m 223.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="6" content="m 101.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="3" content="m 47.283464,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="G" content="m 97.283461,1005.0787 16.999999,0 0,17 -16.999999,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F9" content="m 164.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Minus" content="m 191.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Space" content="m 63.283464,1041.0787 89.999996,0 0,17 -89.999996,0 z" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="WINKEY" content="m 17.283467,1041.0787 22,0 0,17 -22,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="P" content="m 182.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="C" content="m 70.283464,1023.0787 16.999997,0 0,17 -16.999997,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Right Alt" content="m 154.28346,1041.0787 22,0 0,17 -22,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="F1" content="m 20.283467,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="I" content="m 146.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F3" content="m 56.283464,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="E" content="m 56.283464,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Quote" content="m 205.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="4" content="m 65.283464,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="V" content="m 88.283461,1023.0787 16.999999,0 0,17 -16.999999,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="U" content="m 128.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="K" content="m 151.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="L" content="m 169.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Comma" content="m 160.28346,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="7" content="m 119.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Open Bracket" content="m 200.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="N" content="m 124.28346,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="D" content="m 61.283464,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="End" content="m 259.28348,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Right" content="m 259.28348,1041.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F" content="m 79.283464,1005.0787 16.999997,0 0,17 -16.999997,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="2" content="m 29.283467,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Caps Lock" content="m -6.7165354,1005.0787 31.0000004,0 0,17 -31.0000004,0 z" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Semicolon" content="m 187.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="O" content="m 164.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F2" content="m 38.283467,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Left Alt" content="m 40.283467,1041.0787 22,0 0,17 -22,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="W" content="m 38.283467,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="X" content="m 52.283464,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F11" content="m 200.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Pause" content="m 259.28348,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Escape" content="m -6.7165344,951.07872 26.0000004,0 0,17 -26.0000004,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Insert" content="m 177.28346,1041.0787 22,0 0,17 -22,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="Z" content="m 34.283467,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Print Screen" content="m 236.28346,951.07875 22,0 0,17 -22,0 z" opacity="1">
+				</SVGPath>
+                        				<SVGPath id="Close Bracket" content="m 218.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="M" content="m 142.28346,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="5" content="m 83.283461,969.07875 16.999999,0 0,17 -16.999999,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Page Up" content="m 259.28348,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="0" content="m 173.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Y" content="m 110.28346,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="J" content="m 133.28346,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Left" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F4" content="m 74.283464,951.07875 16.999997,0 0,17 -16.999997,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="1" content="m 11.283465,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="T" content="m 92.283461,987.07875 16.999999,0 0,16.99995 -16.999999,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Tab" content="m -6.7165354,987.07875 26.0000004,0 0,16.99995 -26.0000004,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="9" content="m 155.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="B" content="m 106.28346,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Up" content="m 241.28348,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F12" content="m 218.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Page Down" content="m 259.28348,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="S" content="m 43.283467,1005.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F6" content="m 110.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="R" content="m 74.283464,987.07875 16.999997,0 0,16.99995 -16.999997,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Left Shift" content="m -6.7165354,1023.0787 40.0000004,0 0,17 -40.0000004,0 z" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Home" content="m 259.28348,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F5" content="m 92.283461,951.07875 16.999999,0 0,17 -16.999999,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Back Quote" content="m -6.7165354,969.07875 17.0000004,0 0,17 -17.0000004,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="8" content="m 137.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Equals" content="m 209.28346,969.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Backspace" content="m 227.28346,969.07875 31,0 0,17 -31,0 z" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.0</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Slash" content="m 196.28346,1023.0787 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="F8" content="m 146.28346,951.07875 17,0 0,17 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Q" content="m 20.283467,987.07875 17,0 0,16.99995 -17,0 z" fillRule="EVEN_ODD" opacity="1">
+                        					<fill>
+                        						<Color>
+                        							<red>0.0</red>
+                        							<green>0.0</green>
+                        							<blue>0.30980392156862746</blue>
+                        						</Color>
+                        					</fill>
+                        				</SVGPath>
+                        				<SVGPath id="Delete" content="m 200.28346,1041.0787 22,0 0,17 -22,0 z" opacity="1">
+				</SVGPath>
+                        			</children>
+                        			<transforms>
+                        				<Translate x="6.7165354" y="-915.64565">
+				</Translate>
+                        			</transforms>
+                        		</Group>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="73.0" prefWidth="570.0">
+                     <children>
+                        <Group fx:id="weaponIcons">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="-3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="34.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="67.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="102.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="136.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="170.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="210.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="244.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="278.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="312.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="346.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="380.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="414.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="-2.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="33.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="68.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="102.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="136.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="170.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="205.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="241.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="275.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="309.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="343.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="377.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="411.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Group layoutX="151.0" layoutY="-899.0" scaleX="2.0" scaleY="2.0">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="21.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="93.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F5" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="165.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F9" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="89.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="183.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="48.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="197.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="44.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="147.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="116.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="125.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="64.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-6.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esc" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="161.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text=",">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="188.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text=";">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="170.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="66.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-6.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ctrl">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="75.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="26.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="111.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="98.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="219.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F12" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="102.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="134.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="138.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="35.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-6.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="~">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="93.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="237.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="62.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="143.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-6.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caps Lock">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="80.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="129.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F7" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="147.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F8" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="120.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="237.0" layoutY="957.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prt Sc">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="84.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="71.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-6.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tab">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pg Up">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="206.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="'">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="178.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="219.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="21.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F1" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="30.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="192.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="39.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F2" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="165.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pg Dn">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="201.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="210.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="201.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="957.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pause">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="183.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F10" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="224.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="←">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="228.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Backspace">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="155.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alt">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="201.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F11" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="111.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F6" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="39.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="179.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="215.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="18.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opt">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="225.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\\">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="53.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="242.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="↑">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="→">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="242.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="↓">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="57.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="-6.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="41.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alt">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="57.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F3" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="129.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="152.0" layoutY="1011.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="156.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="174.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="75.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F4" translateY="1.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="107.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="12.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Group fx:id="keyIMG" layoutX="1.0" layoutY="-3.0">
+                     <children>
+                        <ImageView id="`" fitHeight="10.0" fitWidth="10.0" layoutX="-3.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="1" fitHeight="10.0" fitWidth="10.0" layoutX="15.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="2" fitHeight="10.0" fitWidth="10.0" layoutX="33.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="3" fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="4" fitHeight="10.0" fitWidth="10.0" layoutX="69.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="5" fitHeight="10.0" fitWidth="10.0" layoutX="87.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="6" fitHeight="10.0" fitWidth="10.0" layoutX="105.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="7" fitHeight="10.0" fitWidth="10.0" layoutX="123.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="8" fitHeight="10.0" fitWidth="10.0" layoutX="141.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="9" fitHeight="10.0" fitWidth="10.0" layoutX="159.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="0" fitHeight="10.0" fitWidth="10.0" layoutX="177.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="-" fitHeight="10.0" fitWidth="10.0" layoutX="195.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="=" fitHeight="10.0" fitWidth="10.0" layoutX="213.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F12" fitHeight="10.0" fitWidth="10.0" layoutX="221.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F11" fitHeight="10.0" fitWidth="10.0" layoutX="203.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F10" fitHeight="10.0" fitWidth="10.0" layoutX="185.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F9" fitHeight="10.0" fitWidth="10.0" layoutX="167.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F8" fitHeight="10.0" fitWidth="10.0" layoutX="149.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F7" fitHeight="10.0" fitWidth="10.0" layoutX="131.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F6" fitHeight="10.0" fitWidth="10.0" layoutX="113.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F5" fitHeight="10.0" fitWidth="10.0" layoutX="95.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F4" fitHeight="10.0" fitWidth="10.0" layoutX="77.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F3" fitHeight="10.0" fitWidth="10.0" layoutX="59.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F2" fitHeight="10.0" fitWidth="10.0" layoutX="41.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F1" fitHeight="10.0" fitWidth="10.0" layoutX="23.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="ESC" fitHeight="10.0" fitWidth="10.0" layoutX="5.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="PRTSCR" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="PAUSE" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="HOME" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="BACKSPACE" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="]" fitHeight="10.0" fitWidth="10.0" layoutX="222.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="[" fitHeight="10.0" fitWidth="10.0" layoutX="204.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="P" fitHeight="10.0" fitWidth="10.0" layoutX="186.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="O" fitHeight="10.0" fitWidth="10.0" layoutX="168.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="I" fitHeight="10.0" fitWidth="10.0" layoutX="150.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="U" fitHeight="10.0" fitWidth="10.0" layoutX="132.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="Y" fitHeight="10.0" fitWidth="10.0" layoutX="114.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="T" fitHeight="10.0" fitWidth="10.0" layoutX="96.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="R" fitHeight="10.0" fitWidth="10.0" layoutX="78.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="E" fitHeight="10.0" fitWidth="10.0" layoutX="60.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="W" fitHeight="10.0" fitWidth="10.0" layoutX="42.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="Q" fitHeight="10.0" fitWidth="10.0" layoutX="24.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="TAB" fitHeight="10.0" fitWidth="10.0" layoutX="6.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="PGUP" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="PGDN" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="ENTER" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="CAPSLOCK" fitHeight="10.0" fitWidth="10.0" layoutX="11.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="A" fitHeight="10.0" fitWidth="10.0" layoutX="29.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="S" fitHeight="10.0" fitWidth="10.0" layoutX="47.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="D" fitHeight="10.0" fitWidth="10.0" layoutX="65.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="F" fitHeight="10.0" fitWidth="10.0" layoutX="83.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="G" fitHeight="10.0" fitWidth="10.0" layoutX="101.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="H" fitHeight="10.0" fitWidth="10.0" layoutX="119.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="J" fitHeight="10.0" fitWidth="10.0" layoutX="137.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="K" fitHeight="10.0" fitWidth="10.0" layoutX="155.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="L" fitHeight="10.0" fitWidth="10.0" layoutX="173.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="SEMICOLON" fitHeight="10.0" fitWidth="10.0" layoutX="191.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="'" fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="\\" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="SHIFT" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="/" fitHeight="10.0" fitWidth="10.0" layoutX="200.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="." fitHeight="10.0" fitWidth="10.0" layoutX="182.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="," fitHeight="10.0" fitWidth="10.0" layoutX="164.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="M" fitHeight="10.0" fitWidth="10.0" layoutX="146.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="N" fitHeight="10.0" fitWidth="10.0" layoutX="128.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="B" fitHeight="10.0" fitWidth="10.0" layoutX="110.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="V" fitHeight="10.0" fitWidth="10.0" layoutX="92.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="C" fitHeight="10.0" fitWidth="10.0" layoutX="74.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="X" fitHeight="10.0" fitWidth="10.0" layoutX="56.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="Z" fitHeight="10.0" fitWidth="10.0" layoutX="38.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="SHIFT" fitHeight="10.0" fitWidth="10.0" layoutX="20.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="UPARROW" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="END" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="CTRL" fitHeight="10.0" fitWidth="10.0" layoutX="3.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="WIN" fitHeight="10.0" fitWidth="10.0" layoutX="26.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="ALT" fitHeight="10.0" fitWidth="10.0" layoutX="49.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="SPACE" fitHeight="10.0" fitWidth="10.0" layoutX="103.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="ALT" fitHeight="10.0" fitWidth="10.0" layoutX="163.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="INS" fitHeight="10.0" fitWidth="10.0" layoutX="186.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="DEL" fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="LEFTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="DOWNARROW" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="RIGHTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="MWHEELDOWN" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="958.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="MWHEELUP" fitHeight="10.0" fitWidth="10.0" layoutX="241.0" layoutY="961.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="MOUSE3" fitHeight="10.0" fitWidth="10.0" layoutX="247.0" layoutY="955.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="MOUSE1" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="959.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView id="MOUSE2" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+         </children>
+      
+         		
+            </Pane>
+   </children>
+</VBox>
