@@ -9,10 +9,10 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.transform.Translate?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="358.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8"
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="245.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/8"
 	  fx:controller="KeybindsController">
    <children>
-      <MenuBar>
+	   <MenuBar prefHeight="25.0" prefWidth="617.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -26,14 +26,14 @@
             </Menu>
         </menus>
       </MenuBar>
-	   <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="570.0"
+	   <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="221.0" prefWidth="648.0"
 			 style="-fx-background-color: #222222;">
          <children>
-            <VBox layoutX="4.0" prefHeight="293.0" prefWidth="570.0">
+			 <VBox layoutX="4.0" layoutY="7.0" prefHeight="202.0" prefWidth="634.0">
                <children>
-                  <Pane prefHeight="219.0" prefWidth="570.0">
+				   <Pane prefHeight="211.0" prefWidth="610.0">
                      <children>
-						 <Group id="layer1" fx:id="keySVG" layoutX="133.0" layoutY="965.0"
+						 <Group id="layer1" fx:id="keySVG" layoutX="153.0" layoutY="930.0"
 								onMouseClicked="#handleKeyClicked" opacity="1.0" scaleX="2.0" scaleY="2.0">
                         			<children>
                         				<SVGPath id="Enter" content="m 236.28346,987.07787 0,17.00003 5,0 0,17.9999 17,0 0,-17.9999 0,-6.00003 0,-11 -22,0 z" opacity="1">
@@ -728,31 +728,43 @@
                         				<SVGPath id="Delete" content="m 200.28346,1041.0787 22,0 0,17 -22,0 z" opacity="1">
 				</SVGPath>
 										<SVGPath id="MWHEELDOWN" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
-												 fillRule="EVEN_ODD" layoutX="18.0" layoutY="55.0" opacity="1">
+												 fillRule="EVEN_ODD" layoutX="72.0" layoutY="-54.0" opacity="1">
 											<fill>
 												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
 											</fill>
 										</SVGPath>
 										<SVGPath id="MOUSE1" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
-												 fillRule="EVEN_ODD" layoutY="37.0" opacity="1">
+												 fillRule="EVEN_ODD" layoutX="54.0" layoutY="-90.0" opacity="1">
 											<fill>
 												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
 											</fill>
 										</SVGPath>
 										<SVGPath id="MOUSE2" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
-												 fillRule="EVEN_ODD" layoutX="36.0" layoutY="37.0" opacity="1">
+												 fillRule="EVEN_ODD" layoutX="72.0" layoutY="-90.0" opacity="1">
 											<fill>
 												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
 											</fill>
 										</SVGPath>
 										<SVGPath id="MOUSE3" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
-												 fillRule="EVEN_ODD" layoutX="18.0" layoutY="37.0" opacity="1">
+												 fillRule="EVEN_ODD" layoutX="54.0" layoutY="-72.0" opacity="1">
 											<fill>
 												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
 											</fill>
 										</SVGPath>
 										<SVGPath id="MWHEELUP" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
-												 fillRule="EVEN_ODD" layoutX="18.0" layoutY="19.0" opacity="1">
+												 fillRule="EVEN_ODD" layoutX="72.0" layoutY="-72.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
+										<SVGPath id="MOUSE4" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutX="54.0" layoutY="-54.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
+										<SVGPath id="MOUSE5" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutX="54.0" layoutY="-36.0" opacity="1">
 											<fill>
 												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
 											</fill>
@@ -767,9 +779,9 @@
                   </Pane>
                </children>
             </VBox>
-			 <Group layoutX="151.0" layoutY="-868.0" scaleX="2.0" scaleY="2.0">
+			 <Group layoutX="172.0" layoutY="-896.0" scaleX="2.0" scaleY="2.0">
                <children>
-				   <Group fx:id="keyIMG" layoutX="1.0" layoutY="1.0">
+				   <Group fx:id="keyIMG" layoutY="1.0">
 					   <children>
 						   <ImageView id="`" fitHeight="10.0" fitWidth="10.0" layoutX="-3.0" layoutY="975.0"
 									  pickOnBounds="true" preserveRatio="true"/>
@@ -937,15 +949,19 @@
 									  pickOnBounds="true" preserveRatio="true"/>
 						   <ImageView id="RIGHTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1047.0"
 									  pickOnBounds="true" preserveRatio="true"/>
-						   <ImageView id="MOUSE3" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="1084.0"
+						   <ImageView id="MOUSE3" fitHeight="10.0" fitWidth="10.0" layoutX="281.0" layoutY="975.0"
 									  pickOnBounds="true" preserveRatio="true"/>
-						   <ImageView id="MOUSE1" fitHeight="10.0" fitWidth="10.0" layoutX="225.0" layoutY="1084.0"
+						   <ImageView id="MOUSE1" fitHeight="10.0" fitWidth="10.0" layoutX="281.0" layoutY="957.0"
 									  pickOnBounds="true" preserveRatio="true"/>
-						   <ImageView id="MOUSE2" fitHeight="10.0" fitWidth="10.0" layoutX="261.0" layoutY="1084.0"
+						   <ImageView id="MOUSE2" fitHeight="10.0" fitWidth="10.0" layoutX="299.0" layoutY="957.0"
 									  pickOnBounds="true" preserveRatio="true"/>
-						   <ImageView id="MWHEELDOWN" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="1102.0"
+						   <ImageView id="MWHEELDOWN" fitHeight="10.0" fitWidth="10.0" layoutX="299.0" layoutY="993.0"
 									  pickOnBounds="true" preserveRatio="true"/>
-						   <ImageView id="MWHEELUP" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="1066.0"
+						   <ImageView id="MWHEELUP" fitHeight="10.0" fitWidth="10.0" layoutX="299.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MOUSE4" fitHeight="10.0" fitWidth="10.0" layoutX="281.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MOUSE5" fitHeight="10.0" fitWidth="10.0" layoutX="281.0" layoutY="1011.0"
 									  pickOnBounds="true" preserveRatio="true"/>
 					   </children>
 				   </Group>
@@ -959,31 +975,31 @@
                         <Font size="5.0" />
                      </font>
                   </Text>
-				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="241.0" layoutY="1102.0" strokeType="OUTSIDE"
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="296.0" layoutY="993.0" strokeType="OUTSIDE"
 						 strokeWidth="0.0" text="Mw Dn">
 					   <font>
 						   <Font size="5.0"/>
 					   </font>
 				   </Text>
-				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="224.0" layoutY="1084.0" strokeType="OUTSIDE"
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="279.0" layoutY="957.0" strokeType="OUTSIDE"
 						 strokeWidth="0.0" text="M 1">
 					   <font>
 						   <Font size="5.0"/>
 					   </font>
 				   </Text>
-				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="261.0" layoutY="1084.0" strokeType="OUTSIDE"
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="296.0" layoutY="957.0" strokeType="OUTSIDE"
 						 strokeWidth="0.0" text="M 2">
 					   <font>
 						   <Font size="5.0"/>
 					   </font>
 				   </Text>
-				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="241.0" layoutY="1066.0" strokeType="OUTSIDE"
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="296.0" layoutY="975.0" strokeType="OUTSIDE"
 						 strokeWidth="0.0" text="Mw Up">
 					   <font>
 						   <Font size="5.0"/>
 					   </font>
 				   </Text>
-				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="243.0" layoutY="1084.0" strokeType="OUTSIDE"
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="279.0" layoutY="975.0" strokeType="OUTSIDE"
 						 strokeWidth="0.0" text="M 3">
 					   <font>
 						   <Font size="5.0"/>
@@ -1390,6 +1406,18 @@
                      </font>
                   </Text>
                   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="12.0" layoutY="975.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+					  <font>
+						  <Font size="5.0"/>
+					  </font>
+				  </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="279.0" layoutY="993.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="M 4">
+					   <font>
+						   <Font size="5.0"/>
+					   </font>
+				   </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="279.0" layoutY="1011.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="M 5">
                      <font>
                         <Font size="5.0" />
                      </font>

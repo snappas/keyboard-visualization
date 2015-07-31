@@ -4,9 +4,9 @@ import java.io.File
 import javafx.scene.image.ImageView
 
 import scala.io.Source
-import scalafx.scene.control.{MenuItem, Menu}
-import scalafx.scene.image.Image
 import scalafx.Includes._
+import scalafx.scene.control.{Menu, MenuItem}
+import scalafx.scene.image.Image
 import scalafx.stage.FileChooser
 
 class QuakePlugin(pluginMenu: Menu, keyImageMap: Map[String, ImageView]) extends KeyboardPlugin {
@@ -40,6 +40,12 @@ class QuakePlugin(pluginMenu: Menu, keyImageMap: Map[String, ImageView]) extends
       configFile = fileChooser.showOpenDialog(null)
       if(configFile != null){
         getBinds(configFile)
+      }
+    }
+  }, new MenuItem("Reset icons") {
+    onAction = handle {
+      for (e <- keyImageMap.values) {
+        e.setImage(null)
       }
     }
   })
