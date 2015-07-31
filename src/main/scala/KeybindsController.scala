@@ -1,9 +1,11 @@
+import java.util.concurrent.TimeUnit
 import java.util.logging.{Level, Logger}
 import javafx.scene.image.ImageView
 import javafx.scene.paint.Paint
 import javafx.scene.shape.SVGPath
 
 import org.jnativehook.keyboard.{NativeKeyEvent, NativeKeyListener}
+import org.jnativehook.mouse.{NativeMouseEvent, NativeMouseListener, NativeMouseWheelEvent, NativeMouseWheelListener}
 import org.jnativehook.{GlobalScreen, NativeHookException}
 import plugin.QuakePlugin
 
@@ -14,7 +16,11 @@ import scalafxml.core.macros.sfxml
 
 
 @sfxml
-class KeybindsController(keySVG: Group, keyIMG: Group, weaponIcons: Group, pluginMenu: Menu) extends NativeKeyListener{
+class KeybindsController(keySVG: Group,
+                         keyIMG: Group,
+                         weaponIcons: Group,
+                         pluginMenu: Menu)
+  extends NativeKeyListener with NativeMouseListener with NativeMouseWheelListener {
 
   addGlobalKeyListener()
 
@@ -45,6 +51,8 @@ class KeybindsController(keySVG: Group, keyIMG: Group, weaponIcons: Group, plugi
         System.exit(1)
     }
     GlobalScreen.addNativeKeyListener(this)
+    GlobalScreen.addNativeMouseListener(this)
+    GlobalScreen.addNativeMouseWheelListener(this)
     setGlobalKeyListenerLoggingLevel()
   }
 
@@ -56,12 +64,9 @@ class KeybindsController(keySVG: Group, keyIMG: Group, weaponIcons: Group, plugi
   }
 
 
-  def handleKeyClicked(event: MouseEvent) = {
-    println(event.getTarget.asInstanceOf[SVGPath].setFill(Paint.valueOf("GREEN")))
-  }
+  def handleKeyClicked(event: MouseEvent) = {}
 
   override def nativeKeyPressed(nativeKeyEvent: NativeKeyEvent): Unit = {
-    System.out.println("Key Pressed: " + NativeKeyEvent.getKeyText(nativeKeyEvent.getKeyCode))
     keymap(NativeKeyEvent.getKeyText(nativeKeyEvent.getKeyCode))._1.setFill(Paint.valueOf("GREEN"))
   }
 
@@ -70,9 +75,29 @@ class KeybindsController(keySVG: Group, keyIMG: Group, weaponIcons: Group, plugi
     keymap(key)._1.setFill(keymap(key)._2)
   }
 
-  override def nativeKeyTyped(nativeKeyEvent: NativeKeyEvent): Unit = {
-    System.out.println("Key Typed: " + nativeKeyEvent.getKeyChar)
+  override def nativeKeyTyped(nativeKeyEvent: NativeKeyEvent): Unit = {}
+
+  override def nativeMouseClicked(nativeMouseEvent: NativeMouseEvent): Unit = {}
+
+  override def nativeMousePressed(nativeMouseEvent: NativeMouseEvent): Unit = {
+    val key = nativeMouseEvent.getButton
+    keymap("MOUSE" + key.toString)._1.setFill(Paint.valueOf("GREEN"))
   }
 
+  override def nativeMouseReleased(nativeMouseEvent: NativeMouseEvent): Unit = {
+    val key = nativeMouseEvent.getButton
+    keymap("MOUSE" + key.toString)._1.setFill(keymap("MOUSE" + key.toString)._2)
+  }
 
+  override def nativeMouseWheelMoved(nativeMouseWheelEvent: NativeMouseWheelEvent): Unit = {
+    if (nativeMouseWheelEvent.getWheelRotation == 1) {
+      keymap("MWHEELDOWN")._1.setFill(Paint.valueOf("GREEN"))
+      TimeUnit.MILLISECONDS.sleep(50)
+      keymap("MWHEELDOWN")._1.setFill(keymap("MWHEELDOWN")._2)
+    } else {
+      keymap("MWHEELUP")._1.setFill(Paint.valueOf("GREEN"))
+      TimeUnit.MILLISECONDS.sleep(50)
+      keymap("MWHEELUP")._1.setFill(keymap("MWHEELUP")._2)
+    }
+  }
 }

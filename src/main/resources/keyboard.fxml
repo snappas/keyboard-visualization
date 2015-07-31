@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
-<?import javafx.scene.transform.*?>
-
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeybindsController">
+<?import javafx.scene.transform.Translate?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="358.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8"
+	  fx:controller="KeybindsController">
    <children>
       <MenuBar>
         <menus>
@@ -26,13 +26,15 @@
             </Menu>
         </menus>
       </MenuBar>
-      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="570.0" style="-fx-background-color: #222222;">
+	   <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="570.0"
+			 style="-fx-background-color: #222222;">
          <children>
             <VBox layoutX="4.0" prefHeight="293.0" prefWidth="570.0">
                <children>
                   <Pane prefHeight="219.0" prefWidth="570.0">
                      <children>
-                        		<Group id="layer1" fx:id="keySVG" layoutX="133.0" layoutY="935.0" onMouseClicked="#handleKeyClicked" opacity="1.0" scaleX="2.0" scaleY="2.0">
+						 <Group id="layer1" fx:id="keySVG" layoutX="133.0" layoutY="965.0"
+								onMouseClicked="#handleKeyClicked" opacity="1.0" scaleX="2.0" scaleY="2.0">
                         			<children>
                         				<SVGPath id="Enter" content="m 236.28346,987.07787 0,17.00003 5,0 0,17.9999 17,0 0,-17.9999 0,-6.00003 0,-11 -22,0 z" opacity="1">
 				</SVGPath>
@@ -725,6 +727,36 @@
                         				</SVGPath>
                         				<SVGPath id="Delete" content="m 200.28346,1041.0787 22,0 0,17 -22,0 z" opacity="1">
 				</SVGPath>
+										<SVGPath id="MWHEELDOWN" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutX="18.0" layoutY="55.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
+										<SVGPath id="MOUSE1" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutY="37.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
+										<SVGPath id="MOUSE2" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutX="36.0" layoutY="37.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
+										<SVGPath id="MOUSE3" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutX="18.0" layoutY="37.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
+										<SVGPath id="MWHEELUP" content="m 223.28346,1041.0787 17,0 0,17 -17,0 z"
+												 fillRule="EVEN_ODD" layoutX="18.0" layoutY="19.0" opacity="1">
+											<fill>
+												<Color blue="0.30980392156862746" green="0.0" red="0.0"/>
+											</fill>
+										</SVGPath>
                         			</children>
                         			<transforms>
                         				<Translate x="6.7165354" y="-915.64565">
@@ -733,44 +765,190 @@
                         		</Group>
                      </children>
                   </Pane>
-                  <Pane prefHeight="73.0" prefWidth="570.0">
-                     <children>
-                        <Group fx:id="weaponIcons">
-                           <children>
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="-3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="34.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="67.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="102.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="136.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="170.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="210.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="244.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="278.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="312.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="346.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="380.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="414.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="-2.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="33.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="68.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="102.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="136.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="170.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="205.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="241.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="275.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="309.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="343.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="377.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="411.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-                           </children>
-                        </Group>
-                     </children>
-                  </Pane>
                </children>
             </VBox>
-            <Group layoutX="151.0" layoutY="-899.0" scaleX="2.0" scaleY="2.0">
+			 <Group layoutX="151.0" layoutY="-868.0" scaleX="2.0" scaleY="2.0">
                <children>
+				   <Group fx:id="keyIMG" layoutX="1.0" layoutY="1.0">
+					   <children>
+						   <ImageView id="`" fitHeight="10.0" fitWidth="10.0" layoutX="-3.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="1" fitHeight="10.0" fitWidth="10.0" layoutX="15.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="2" fitHeight="10.0" fitWidth="10.0" layoutX="33.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="3" fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="4" fitHeight="10.0" fitWidth="10.0" layoutX="69.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="5" fitHeight="10.0" fitWidth="10.0" layoutX="87.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="6" fitHeight="10.0" fitWidth="10.0" layoutX="105.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="7" fitHeight="10.0" fitWidth="10.0" layoutX="123.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="8" fitHeight="10.0" fitWidth="10.0" layoutX="141.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="9" fitHeight="10.0" fitWidth="10.0" layoutX="159.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="0" fitHeight="10.0" fitWidth="10.0" layoutX="177.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="-" fitHeight="10.0" fitWidth="10.0" layoutX="195.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="=" fitHeight="10.0" fitWidth="10.0" layoutX="213.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F12" fitHeight="10.0" fitWidth="10.0" layoutX="221.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F11" fitHeight="10.0" fitWidth="10.0" layoutX="203.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F10" fitHeight="10.0" fitWidth="10.0" layoutX="185.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F9" fitHeight="10.0" fitWidth="10.0" layoutX="167.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F8" fitHeight="10.0" fitWidth="10.0" layoutX="149.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F7" fitHeight="10.0" fitWidth="10.0" layoutX="131.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F6" fitHeight="10.0" fitWidth="10.0" layoutX="113.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F5" fitHeight="10.0" fitWidth="10.0" layoutX="95.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F4" fitHeight="10.0" fitWidth="10.0" layoutX="77.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F3" fitHeight="10.0" fitWidth="10.0" layoutX="59.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F2" fitHeight="10.0" fitWidth="10.0" layoutX="41.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F1" fitHeight="10.0" fitWidth="10.0" layoutX="23.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="ESC" fitHeight="10.0" fitWidth="10.0" layoutX="5.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="PRTSCR" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="PAUSE" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="957.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="HOME" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="BACKSPACE" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="975.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="]" fitHeight="10.0" fitWidth="10.0" layoutX="222.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="[" fitHeight="10.0" fitWidth="10.0" layoutX="204.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="P" fitHeight="10.0" fitWidth="10.0" layoutX="186.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="O" fitHeight="10.0" fitWidth="10.0" layoutX="168.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="I" fitHeight="10.0" fitWidth="10.0" layoutX="150.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="U" fitHeight="10.0" fitWidth="10.0" layoutX="132.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="Y" fitHeight="10.0" fitWidth="10.0" layoutX="114.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="T" fitHeight="10.0" fitWidth="10.0" layoutX="96.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="R" fitHeight="10.0" fitWidth="10.0" layoutX="78.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="E" fitHeight="10.0" fitWidth="10.0" layoutX="60.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="W" fitHeight="10.0" fitWidth="10.0" layoutX="42.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="Q" fitHeight="10.0" fitWidth="10.0" layoutX="24.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="TAB" fitHeight="10.0" fitWidth="10.0" layoutX="6.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="PGUP" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="993.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="PGDN" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="ENTER" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="CAPSLOCK" fitHeight="10.0" fitWidth="10.0" layoutX="11.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="A" fitHeight="10.0" fitWidth="10.0" layoutX="29.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="S" fitHeight="10.0" fitWidth="10.0" layoutX="47.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="D" fitHeight="10.0" fitWidth="10.0" layoutX="65.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="F" fitHeight="10.0" fitWidth="10.0" layoutX="83.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="G" fitHeight="10.0" fitWidth="10.0" layoutX="101.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="H" fitHeight="10.0" fitWidth="10.0" layoutX="119.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="J" fitHeight="10.0" fitWidth="10.0" layoutX="137.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="K" fitHeight="10.0" fitWidth="10.0" layoutX="155.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="L" fitHeight="10.0" fitWidth="10.0" layoutX="173.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="SEMICOLON" fitHeight="10.0" fitWidth="10.0" layoutX="191.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="'" fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="\\" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1011.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="SHIFT" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="/" fitHeight="10.0" fitWidth="10.0" layoutX="200.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="." fitHeight="10.0" fitWidth="10.0" layoutX="182.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="," fitHeight="10.0" fitWidth="10.0" layoutX="164.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="M" fitHeight="10.0" fitWidth="10.0" layoutX="146.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="N" fitHeight="10.0" fitWidth="10.0" layoutX="128.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="B" fitHeight="10.0" fitWidth="10.0" layoutX="110.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="V" fitHeight="10.0" fitWidth="10.0" layoutX="92.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="C" fitHeight="10.0" fitWidth="10.0" layoutX="74.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="X" fitHeight="10.0" fitWidth="10.0" layoutX="56.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="Z" fitHeight="10.0" fitWidth="10.0" layoutX="38.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="SHIFT" fitHeight="10.0" fitWidth="10.0" layoutX="20.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="UPARROW" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="END" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1029.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="CTRL" fitHeight="10.0" fitWidth="10.0" layoutX="3.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="WIN" fitHeight="10.0" fitWidth="10.0" layoutX="26.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="ALT" fitHeight="10.0" fitWidth="10.0" layoutX="49.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="SPACE" fitHeight="10.0" fitWidth="10.0" layoutX="103.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="ALT" fitHeight="10.0" fitWidth="10.0" layoutX="163.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="INS" fitHeight="10.0" fitWidth="10.0" layoutX="186.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="DEL" fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="LEFTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="DOWNARROW" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="RIGHTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1047.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MOUSE3" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="1084.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MOUSE1" fitHeight="10.0" fitWidth="10.0" layoutX="225.0" layoutY="1084.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MOUSE2" fitHeight="10.0" fitWidth="10.0" layoutX="261.0" layoutY="1084.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MWHEELDOWN" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="1102.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+						   <ImageView id="MWHEELUP" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="1066.0"
+									  pickOnBounds="true" preserveRatio="true"/>
+					   </children>
+				   </Group>
                   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="21.0" layoutY="993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q">
                      <font>
                         <Font size="5.0" />
@@ -781,6 +959,36 @@
                         <Font size="5.0" />
                      </font>
                   </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="241.0" layoutY="1102.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="Mw Dn">
+					   <font>
+						   <Font size="5.0"/>
+					   </font>
+				   </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="224.0" layoutY="1084.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="M 1">
+					   <font>
+						   <Font size="5.0"/>
+					   </font>
+				   </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="261.0" layoutY="1084.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="M 2">
+					   <font>
+						   <Font size="5.0"/>
+					   </font>
+				   </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="241.0" layoutY="1066.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="Mw Up">
+					   <font>
+						   <Font size="5.0"/>
+					   </font>
+				   </Text>
+				   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="243.0" layoutY="1084.0" strokeType="OUTSIDE"
+						 strokeWidth="0.0" text="M 3">
+					   <font>
+						   <Font size="5.0"/>
+					   </font>
+				   </Text>
                   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="165.0" layoutY="956.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F9" translateY="1.0">
                      <font>
                         <Font size="5.0" />
@@ -1186,98 +1394,6 @@
                         <Font size="5.0" />
                      </font>
                   </Text>
-                  <Group fx:id="keyIMG" layoutX="1.0" layoutY="-3.0">
-                     <children>
-                        <ImageView id="`" fitHeight="10.0" fitWidth="10.0" layoutX="-3.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="1" fitHeight="10.0" fitWidth="10.0" layoutX="15.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="2" fitHeight="10.0" fitWidth="10.0" layoutX="33.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="3" fitHeight="10.0" fitWidth="10.0" layoutX="51.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="4" fitHeight="10.0" fitWidth="10.0" layoutX="69.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="5" fitHeight="10.0" fitWidth="10.0" layoutX="87.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="6" fitHeight="10.0" fitWidth="10.0" layoutX="105.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="7" fitHeight="10.0" fitWidth="10.0" layoutX="123.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="8" fitHeight="10.0" fitWidth="10.0" layoutX="141.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="9" fitHeight="10.0" fitWidth="10.0" layoutX="159.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="0" fitHeight="10.0" fitWidth="10.0" layoutX="177.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="-" fitHeight="10.0" fitWidth="10.0" layoutX="195.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="=" fitHeight="10.0" fitWidth="10.0" layoutX="213.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F12" fitHeight="10.0" fitWidth="10.0" layoutX="221.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F11" fitHeight="10.0" fitWidth="10.0" layoutX="203.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F10" fitHeight="10.0" fitWidth="10.0" layoutX="185.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F9" fitHeight="10.0" fitWidth="10.0" layoutX="167.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F8" fitHeight="10.0" fitWidth="10.0" layoutX="149.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F7" fitHeight="10.0" fitWidth="10.0" layoutX="131.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F6" fitHeight="10.0" fitWidth="10.0" layoutX="113.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F5" fitHeight="10.0" fitWidth="10.0" layoutX="95.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F4" fitHeight="10.0" fitWidth="10.0" layoutX="77.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F3" fitHeight="10.0" fitWidth="10.0" layoutX="59.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F2" fitHeight="10.0" fitWidth="10.0" layoutX="41.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F1" fitHeight="10.0" fitWidth="10.0" layoutX="23.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="ESC" fitHeight="10.0" fitWidth="10.0" layoutX="5.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="PRTSCR" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="PAUSE" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="HOME" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="BACKSPACE" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="975.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="]" fitHeight="10.0" fitWidth="10.0" layoutX="222.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="[" fitHeight="10.0" fitWidth="10.0" layoutX="204.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="P" fitHeight="10.0" fitWidth="10.0" layoutX="186.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="O" fitHeight="10.0" fitWidth="10.0" layoutX="168.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="I" fitHeight="10.0" fitWidth="10.0" layoutX="150.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="U" fitHeight="10.0" fitWidth="10.0" layoutX="132.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="Y" fitHeight="10.0" fitWidth="10.0" layoutX="114.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="T" fitHeight="10.0" fitWidth="10.0" layoutX="96.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="R" fitHeight="10.0" fitWidth="10.0" layoutX="78.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="E" fitHeight="10.0" fitWidth="10.0" layoutX="60.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="W" fitHeight="10.0" fitWidth="10.0" layoutX="42.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="Q" fitHeight="10.0" fitWidth="10.0" layoutX="24.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="TAB" fitHeight="10.0" fitWidth="10.0" layoutX="6.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="PGUP" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="993.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="PGDN" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="ENTER" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="CAPSLOCK" fitHeight="10.0" fitWidth="10.0" layoutX="11.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="A" fitHeight="10.0" fitWidth="10.0" layoutX="29.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="S" fitHeight="10.0" fitWidth="10.0" layoutX="47.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="D" fitHeight="10.0" fitWidth="10.0" layoutX="65.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="F" fitHeight="10.0" fitWidth="10.0" layoutX="83.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="G" fitHeight="10.0" fitWidth="10.0" layoutX="101.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="H" fitHeight="10.0" fitWidth="10.0" layoutX="119.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="J" fitHeight="10.0" fitWidth="10.0" layoutX="137.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="K" fitHeight="10.0" fitWidth="10.0" layoutX="155.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="L" fitHeight="10.0" fitWidth="10.0" layoutX="173.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="SEMICOLON" fitHeight="10.0" fitWidth="10.0" layoutX="191.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="'" fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="\\" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="SHIFT" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="/" fitHeight="10.0" fitWidth="10.0" layoutX="200.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="." fitHeight="10.0" fitWidth="10.0" layoutX="182.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="," fitHeight="10.0" fitWidth="10.0" layoutX="164.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="M" fitHeight="10.0" fitWidth="10.0" layoutX="146.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="N" fitHeight="10.0" fitWidth="10.0" layoutX="128.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="B" fitHeight="10.0" fitWidth="10.0" layoutX="110.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="V" fitHeight="10.0" fitWidth="10.0" layoutX="92.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="C" fitHeight="10.0" fitWidth="10.0" layoutX="74.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="X" fitHeight="10.0" fitWidth="10.0" layoutX="56.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="Z" fitHeight="10.0" fitWidth="10.0" layoutX="38.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="SHIFT" fitHeight="10.0" fitWidth="10.0" layoutX="20.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="UPARROW" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="END" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1029.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="CTRL" fitHeight="10.0" fitWidth="10.0" layoutX="3.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="WIN" fitHeight="10.0" fitWidth="10.0" layoutX="26.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="ALT" fitHeight="10.0" fitWidth="10.0" layoutX="49.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="SPACE" fitHeight="10.0" fitWidth="10.0" layoutX="103.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="ALT" fitHeight="10.0" fitWidth="10.0" layoutX="163.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="INS" fitHeight="10.0" fitWidth="10.0" layoutX="186.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="DEL" fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="LEFTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="227.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="DOWNARROW" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="RIGHTARROW" fitHeight="10.0" fitWidth="10.0" layoutX="263.0" layoutY="1047.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="MWHEELDOWN" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="958.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="MWHEELUP" fitHeight="10.0" fitWidth="10.0" layoutX="241.0" layoutY="961.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="MOUSE3" fitHeight="10.0" fitWidth="10.0" layoutX="247.0" layoutY="955.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="MOUSE1" fitHeight="10.0" fitWidth="10.0" layoutX="245.0" layoutY="959.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView id="MOUSE2" fitHeight="10.0" fitWidth="10.0" layoutX="243.0" layoutY="957.0" pickOnBounds="true" preserveRatio="true" />
-                     </children>
-                  </Group>
                </children>
             </Group>
          </children>
