@@ -1,6 +1,11 @@
 # keyboard-visualization
 Keyboard visualization of key presses in Scala
 
-![Keyboard image 1](https://cloud.githubusercontent.com/assets/3138533/8994638/4de212be-36d2-11e5-9c8d-5176a70c5888.png)
+No keys pressed
+![kb1](https://cloud.githubusercontent.com/assets/3138533/9000811/e0f7c1d0-3712-11e5-8ac4-f18559969650.png)
 
-![Keyboard image 2](https://cloud.githubusercontent.com/assets/3138533/8994701/a81baa24-36d2-11e5-8f4b-dabd48ad0359.png)
+'G' 'I' 'T' keys pressed at the same time
+![kb2](https://cloud.githubusercontent.com/assets/3138533/9000812/e0fbaf66-3712-11e5-8a25-7d24034b5fab.png)
+
+toxjq Quake Live config loaded
+![kb3](https://cloud.githubusercontent.com/assets/3138533/9000810/e0f7b730-3712-11e5-8e9c-eca3fcb9badc.png)
