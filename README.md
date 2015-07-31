@@ -1,6 +1,9 @@
 # keyboard-visualization
 Keyboard visualization of key presses in Scala
 
+Requires Java runtime > 1.8.0_40 [Download latest Java]
+
+
 No keys pressed
 ![kb1](https://cloud.githubusercontent.com/assets/3138533/9000811/e0f7c1d0-3712-11e5-8ac4-f18559969650.png)
 
@@ -9,3 +12,5 @@ No keys pressed
 
 toxjq Quake Live config loaded
 ![kb3](https://cloud.githubusercontent.com/assets/3138533/9000810/e0f7b730-3712-11e5-8e9c-eca3fcb9badc.png)
+
+[Download latest Java]: https://java.com/en/download/
